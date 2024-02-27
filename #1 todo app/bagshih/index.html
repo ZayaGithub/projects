@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex">
+      <!-- ehnii container -->
+      <h1>todo</h1>
+      <div
+        class="container flex"
+        ondragover="allowDrop(event)"
+        ondrop="drop(event)"
+        id="todo"
+      ></div>
+      <!-- 2 dahi container-->
+      <h1>done</h1>
+      <div
+        class="container flex"
+        ondragover="allowDrop(event)"
+        ondrop="drop(event)"
+        id="done"
+      ></div>
+      <!-- modal gargah -->
+      <button onclick="show()" id="add-todo-button">Add todo</button>
+      <!-- modal heseg -->
+      <div class="modalContainer">
+        <div class="a" onclick="hide()"></div>
+        <div class="modal">
+          <p>Title</p>
+          <input id="title-input" type="text" />
+          <p>description</p>
+          <input id="description-input" type="text" />
+          <p>status</p>
+          <input id="status-input" type="text" />
+          <p>priority</p>
+          <input id="priority-input" type="text" />
+          <button onclick="addTodo()">Submit</button>
+          <button onclick="hide()">hide</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+ajfwekhfkajhfhwa

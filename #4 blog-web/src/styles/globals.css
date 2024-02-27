@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.carousel {
+  animation: qw 150s linear infinite;
+  transition: 5s;
+}
+@keyframes qw {
+  0% {
+    transform: translateX(-100%);
+  }
+  10% {
+    transform: translateX(-200%);
+  }
+  20% {
+    transform: translateX(-300%);
+  }
+  30% {
+    transform: translateX(-400%);
+  }
+}
