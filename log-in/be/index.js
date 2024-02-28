@@ -1,29 +1,24 @@
 import express, { response } from "express";
 import cors from "cors";
-import fs from "fs";
 
 // const port = 3000; ingej bichij bolno
 const app = express();
-const database = "db.json";
 app.use(cors());
 app.use(express.json());
 
+const user = [];
+
 app.get("/user", (request, response) => {
-  const user = JSON.parse(fs.readFileSync(database));
   response.json(user);
 });
-
-app.post("/user", (request, response) => {
-  const addUser = request.body;
-  const user = JSON.parse(fs.readFileSync(database));
-  user.push(addUser);
-  fs.writeFileSync(database, JSON.stringify(user));
-  response.status(200).send(user);
+app.post("/", (request, response) => {
+  user.push(request.body);
+  console.log(user);
+  response.send(user);
 });
 
-app.get("/categoies/:id", (request, response) => {
-  const { id } = request.params;
-});
-
+// app.get("/", (request, response) => {});
 // listenii ehnii utga ni port asah gazar
-app.listen(3005, () => {});
+app.listen(3000, () => {
+  console.log(`Server started http://localhost:3000`);
+});
