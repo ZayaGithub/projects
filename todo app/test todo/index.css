@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-image: url(https://img.freepik.com/premium-photo/lofi-empty-interior-messy-desk-window-view-forest-jungle-anime-manga-style-colorful-study-lofi-desk-cozy-chill-vibe-hiphop-atmoshperic-lighs-stars-4k-wallpaper_999147-5597.jpg?w=1800);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.boards {
+  width: 1288px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 16px;
+  padding: 120px 0px;
+}
+.board {
+  width: 25%;
+  background: #ebecf0;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: fit-content;
+}
+.header {
+  display: flex;
+  font: bold;
+  padding: 15px;
+  font-size: 20px;
+  gap: 10px;
+}
+.count {
+  color: gray;
+}
+.add-btn {
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  width: 95%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  text-align: start;
+  background-color: white;
+  color: black;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 90%;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.input {
+  width: 75%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h4 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.priority {
+  border: 1px solid gray;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 5px;
+  font-size: 14px;
+}
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+#done-i {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 3px;
+  cursor: pointer;
+}
+#remove-i {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 5px;
+  height: 15px;
+  cursor: pointer;
+}
+#edit-i {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 3px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.show {
+  display: flex !important;
+}
+#done-i :hover,
+button :hover,
+.add-btn :hover {
+  background-color: gray;
+}
+
+.modalContainer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modal {
+  width: 360px;
+  height: 450px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 12px;
+}
+input {
+  width: 95%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+#description-input {
+  height: 100px;
+}
+h3 {
+  margin-top: 0;
+  font-size: 30px;
+}
+p {
+  margin: 0;
+}
+select {
+  width: 95%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+}
+button {
+  width: 100%;
+  height: 30px;
+  margin-top: 15px;
+  background: black;
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
